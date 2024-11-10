@@ -21,6 +21,7 @@ def main():
         print(f"HW{hw}", hws[hw])
     flattened_key_list = sorted(dlsca.Auxiliar.my_flatten(hws))
     print(flattened_key_list)
+    # Saves array of the keys to be used in the framework
     np.save("keys_array.npy", flattened_key_list)
 
 if __name__ == "__main__":
